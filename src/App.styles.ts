@@ -380,6 +380,14 @@ export const Main = styled.main`
     }
   }
 
+  .roll-to-top {
+    position: fixed;
+    z-index: 1001;
+    bottom: 20px;
+    right: 20px;
+    color: #149400;
+  }
+
   /* ---section-sobre---- */
 
   .section-sobre {
