@@ -236,7 +236,7 @@ export const Main = styled.main`
   .section-one {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(12, 12, 12);
+    background-color: var(--firts-bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -380,14 +380,6 @@ export const Main = styled.main`
     }
   }
 
-  .roll-to-top {
-    position: fixed;
-    z-index: 1001;
-    bottom: 20px;
-    right: 20px;
-    color: #149400;
-  }
-
   /* ---section-sobre---- */
 
   .section-sobre {
@@ -482,7 +474,7 @@ export const Main = styled.main`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(12, 12, 12);
+    background-color: var(--firts-bg-color);
   }
 
   .section-projetos .wrapper {
@@ -673,7 +665,7 @@ export const Main = styled.main`
   }
 
   .section-habilidades .skill-card {
-    background-color: rgb(12, 12, 12);
+    background-color: var(--firts-bg-color);
     width: 350px;
     height: 350px;
     display: flex;
@@ -726,7 +718,7 @@ export const Main = styled.main`
   .section-contato {
     width: 100vw;
     min-height: 100vh;
-    background-color: rgb(12, 12, 12);
+    background-color: var(--firts-bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -851,7 +843,7 @@ export const Main = styled.main`
     height: 5rem;
     display: flex;
     justify-content: center;
-    background-color: rgb(12, 12, 12);
+    background-color: var(--firts-bg-color);
   }
 
   footer .wrapper {
@@ -889,5 +881,21 @@ export const Main = styled.main`
     footer p {
       font-size: 0.5rem;
     }
+  }
+
+  .light-dark {
+    position: fixed;
+    z-index: 800;
+    bottom: 20px;
+    left: 20px;
+    color: #149400;
+  }
+
+  .roll-to-top {
+    position: fixed;
+    z-index: 800;
+    bottom: 20px;
+    right: 20px;
+    color: #149400;
   }
 `;

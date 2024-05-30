@@ -25,13 +25,23 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+:root {
+	--first-bg-color: rgb(12, 12, 12);
+	--second-bg-color: rgb(20, 20, 20);
+}
+
+.dark-mode:root {
+	--first-bg-color: rgb(235, 235, 235);
+	--second-bg-color: rgb(245, 245, 245);
+}
+
 html {
 	scroll-behavior: smooth;
 }
 
 body {
 	line-height: 1;
-  background-color: rgb(20, 20, 20);
+  background-color: var(--second-bg-color);
 	font-family: "DM Sans", sans-serif;
 	color: rgb(255, 255, 255);
 }
