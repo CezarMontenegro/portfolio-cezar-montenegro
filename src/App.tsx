@@ -552,7 +552,7 @@ function App() {
           </div>
         </div>
       )}
-      <div className="light-dark">
+      <div className="light-dark"  onClick={handleLightDark}>
         <div className="absolute-wrapper">
           <svg
             xmlns="http://www.w3.org/2000/svg"

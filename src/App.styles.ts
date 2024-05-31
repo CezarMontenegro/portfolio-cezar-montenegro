@@ -543,6 +543,7 @@ export const Main = styled.main`
     font-size: 1.5rem;
     text-align: center;
     color: var(--p-color);
+  
   }
 
   .project-card .img-wrapper {
