@@ -890,38 +890,49 @@ export const Main = styled.main`
     bottom: 20px;
     left: 20px;
     height: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 80px;
+    border: 1px solid #149400;
+    border-radius: 50px;
     background-color: transparent;
 
-    input[type="checkbox"] {
-      width: 70px;
-      height: 40px;
-      appearance: none;
-      border: 1px solid #149400;
-      border-radius: 50px;
+    .absolute-wrapper {
+      width: 100%;
+      height: 100%;
       position: relative;
-      background-color: transparent;
-      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    input[type="checkbox"]:before {
-      content: "";
+    svg {
       position: absolute;
-      right: 34px;
-      top: 5px;
+      z-index: 1999;
+    }
+
+    svg:first-child {
+      right: 8px;
+    }
+
+    svg:last-of-type {
+      left: 8px;
+      color: var(--firts-bg-color)
+    }
+
+    input {
+      position: absolute;
+      appearance: none;
+      z-index: 2000;
       width: 28px;
       height: 28px;
       border-radius: 50px;
       background-color: #149400;
-      box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px;
-
     }
 
-    input:checked[type="checkbox"]:before {
-      right: 4px;
+    input:checked {
+      left: 44px;
     }
+
+    
   }
 
   .roll-to-top {
