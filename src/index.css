@@ -26,13 +26,25 @@ footer, header, hgroup, menu, nav, section {
 }
 
 :root {
-	--first-bg-color: rgb(12, 12, 12);
+	--first-bg-color: rgb(15, 15, 15);
 	--second-bg-color: rgb(20, 20, 20);
+	--third-bg-color: rgb(25, 25, 25);
+	--fourth-bg-color: rgb(35, 35, 35);
+	--main-color:  #00ff00;;
+	--box-shadow-color: rgba(255, 255, 255, 0.152);
+	--h1-color: rgb(255, 2552, 255);
+	--p-color: #ffffffa8;
 }
 
 .dark-mode:root {
-	--first-bg-color: rgb(235, 235, 235);
-	--second-bg-color: rgb(245, 245, 245);
+	--first-bg-color: rgb(245, 245, 245);
+	--second-bg-color: rgb(235, 235, 235);
+	--third-bg-color: rgb(225, 225, 225);
+	--fourth-bg-color: rgb(205, 205, 205);
+	--box-shadow-color: rgba(0, 0, 0, 0.267);
+	--h1-color: rgb(0, 0, 0);
+	--p-color: #444444a8;
+
 }
 
 html {

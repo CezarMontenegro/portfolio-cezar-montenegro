@@ -8,7 +8,7 @@ export const Main = styled.main`
     backdrop-filter: blur(1rem);
     height: 4.5rem;
     width: 100%;
-    color: #149400;
+    color: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +34,7 @@ export const Main = styled.main`
 
   .header .logo a {
     text-decoration: none;
-    color: #149400;
+    color: var(--main-color);
   }
 
   .header .logo a:hover {
@@ -58,7 +58,7 @@ export const Main = styled.main`
 
   .nav ul li a {
     text-decoration: none;
-    color: #149400;
+    color: var(--main-color);
     position: relative;
     padding: 10px 0;
     transition: 0.3s;
@@ -114,7 +114,7 @@ export const Main = styled.main`
   }
 
   .header .social svg {
-    color: #149400;
+    color: var(--main-color);
   }
 
   .header .social svg:hover {
@@ -237,7 +237,7 @@ export const Main = styled.main`
   .section-one {
     width: 100vw;
     height: 100vh;
-    background-color: var(--firts-bg-color);
+    background-color: var(--first-bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,7 +248,7 @@ export const Main = styled.main`
   }
 
   .section-one .about p:first-child {
-    color: #149400;
+    color: var(--main-color);
     font-size: 1.5rem;
     font-weight: bold;
     line-height: 150%;
@@ -257,9 +257,9 @@ export const Main = styled.main`
     margin-bottom: 1rem;
   }
 
-  .section-one .about p:nth-child(2) {
+  .section-one .about h1 {
     font-size: 5rem;
-    color: rgb(255, 255, 255);
+    color: var(--h1-color);
     line-height: 110%;
     margin-bottom: 1rem;
   }
@@ -269,10 +269,10 @@ export const Main = styled.main`
     animation: typing 2s steps(27), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 3px solid #149400;
+    border-right: 3px solid var(--main-color);
     font-family: monospace;
     font-size: 2em;
-    color: #ffffffa8;
+    color: var(--p-color);
     margin-bottom: 2rem;
   }
 
@@ -293,7 +293,7 @@ export const Main = styled.main`
   }
 
   .about button {
-    border: 0.2rem solid #149400;
+    border: 0.2rem solid var(--main-color);
     padding: 1rem 2rem;
     width: fit-content;
     font-size: 1rem;
@@ -306,8 +306,8 @@ export const Main = styled.main`
     transition: 0.4s;
     cursor: pointer;
     border-radius: 10px;
-    background-color: #149400;
-    color: #d1ffca;
+    background-color: var(--main-color);
+    color: #3a4838;
   }
 
   .section-one .photo {
@@ -320,8 +320,9 @@ export const Main = styled.main`
   .section-one .photo img {
     border-radius: 50%;
     width: 300px;
-    background-color: #149400;
+    background-color: var(--main-color);
     transition: 0.3s;
+    box-shadow: -.5rem .5rem 1rem var(--box-shadow-color);
   }
 
   .section-one .photo img:hover {
@@ -345,7 +346,7 @@ export const Main = styled.main`
       font-size: 1.3rem;
     }
 
-    .section-one .about p:nth-child(2) {
+    .section-one .about h1 {
       font-size: 4rem;
     }
 
@@ -403,8 +404,12 @@ export const Main = styled.main`
     margin-top: 5rem;
   }
 
+  span {
+    color: var(--h1-color);
+  }
+
   .section-sobre .sobre-header h2 {
-    color: #149400;
+    color: var(--main-color);
     font-size: 3rem;
     font-weight: bold;
     margin: 10px 0 30px;
@@ -424,7 +429,7 @@ export const Main = styled.main`
 
   .section-sobre .photo img {
     border-radius: 10px;
-    box-shadow: -1px 1px 6px rgb(182, 182, 182);
+    box-shadow: -.5rem .5rem 1rem var(--box-shadow-color);
   }
 
   .section-sobre .about {
@@ -435,7 +440,7 @@ export const Main = styled.main`
   .section-sobre .about p {
     font-size: 18px;
     line-height: 1.3;
-    color: #ffffffa8;
+    color: var(--p-color);
     margin-bottom: 10px;
   }
 
@@ -475,7 +480,7 @@ export const Main = styled.main`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--firts-bg-color);
+    background-color: var(--first-bg-color);
   }
 
   .section-projetos .wrapper {
@@ -497,7 +502,7 @@ export const Main = styled.main`
   }
 
   .section-projetos .projetos-header h2 {
-    color: #149400;
+    color: var(--main-color);
     font-size: 3rem;
     font-weight: bold;
   }
@@ -512,20 +517,20 @@ export const Main = styled.main`
   .project-card {
     width: 300px;
     height: 450px;
-    background-color: rgb(25, 25, 25);
+    background-color: var(--first-bg-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     margin-bottom: 16px;
     padding: 2rem;
-    border-radius: 5px;
-    box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.267);
+    border-radius: 5p.5x;
+    box-shadow: -.5rem .5rem 1rem var(--box-shadow-color);
     transition: 0.3s;
   }
 
   .project-card:hover {
-    background-color: rgb(40, 40, 40);
+    background-color: var(--fourth-bg-color);
 
     .cover {
       display: flex;
@@ -537,7 +542,7 @@ export const Main = styled.main`
     height: 50px;
     font-size: 1.5rem;
     text-align: center;
-    color: #ffffffa8;
+    color: var(--p-color);
   }
 
   .project-card .img-wrapper {
@@ -607,7 +612,7 @@ export const Main = styled.main`
   .project-card p {
     font-size: 1.2rem;
     line-height: 1.3;
-    color: #ffffffa8;
+    color: var(--p-color);
     text-align: center;
   }
 
@@ -652,7 +657,7 @@ export const Main = styled.main`
   }
 
   .section-habilidades .habilidades-header h2 {
-    color: #149400;
+    color: var(--main-color);
     font-size: 3rem;
     font-weight: bold;
   }
@@ -666,24 +671,24 @@ export const Main = styled.main`
   }
 
   .section-habilidades .skill-card {
-    background-color: var(--firts-bg-color);
+    background-color: var(--first-bg-color);
     width: 350px;
     height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    border-radius: 0.6rem;
-    box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.267);
+    border-radius: 0.6r.5em;
+    box-shadow: -.5rem .5rem 1rem var(--box-shadow-color);
     transition: 400ms;
   }
 
   .section-habilidades .skill-card:hover {
-    background-color: rgb(30, 30, 30);
+    background-color: var(--fourth-bg-color);
   }
 
   .skill-card i {
-    color: #ffffffa8;
+    color: var(--p-color);
     margin: 0;
     margin-left: 20px;
     padding: 0;
@@ -691,7 +696,7 @@ export const Main = styled.main`
   }
 
   .skill-card h3 {
-    color: #149400;
+    color: var(--main-color);
     font-size: 2rem;
     margin-bottom: 40px;
   }
@@ -699,7 +704,7 @@ export const Main = styled.main`
   .skill-card p {
     font-size: 1rem;
     line-height: 1.3;
-    color: #ffffffa8;
+    color: var(--p-color);
     text-align: center;
   }
 
@@ -719,7 +724,7 @@ export const Main = styled.main`
   .section-contato {
     width: 100vw;
     min-height: 100vh;
-    background-color: var(--firts-bg-color);
+    background-color: var(--first-bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -737,13 +742,13 @@ export const Main = styled.main`
   }
 
   .contato h2 {
-    color: #149400;
+    color: var(--main-color);
     font-size: 3rem;
     margin-bottom: 30px;
   }
 
   .contato .contact-ancora {
-    color: #ffffffa8;
+    color: var(--p-color);
     text-decoration: none;
     font-size: 1.5rem;
     display: flex;
@@ -765,9 +770,9 @@ export const Main = styled.main`
   }
 
   .contato button {
-    background-color: #149400;
-    border: 2px solid #149400;
-    color: #149400;
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
@@ -780,7 +785,7 @@ export const Main = styled.main`
     cursor: pointer;
     transition: 0.4s;
     border-radius: 10px;
-    color: #d1ffca;
+    color: #3a4838;
   }
 
   .section-contato .image {
@@ -844,7 +849,7 @@ export const Main = styled.main`
     height: 5rem;
     display: flex;
     justify-content: center;
-    background-color: var(--firts-bg-color);
+    background-color: var(--first-bg-color);
   }
 
   footer .wrapper {
@@ -852,13 +857,13 @@ export const Main = styled.main`
   }
 
   footer .logo a {
-    color: #149400;
+    color: var(--main-color);
     font-size: 2rem;
     text-decoration: none;
   }
 
   footer p {
-    color: #ffffffa8;
+    color: var(--p-color);
   }
 
   footer ul {
@@ -868,7 +873,7 @@ export const Main = styled.main`
 
   footer ul li a {
     text-decoration: none;
-    color: #149400;
+    color: var(--main-color);
     position: relative;
     padding: 10px 0;
     transition: 0.3s;
@@ -891,7 +896,7 @@ export const Main = styled.main`
     left: 20px;
     height: 40px;
     width: 80px;
-    border: 1px solid #149400;
+    border: 1px solid var(--main-color);
     border-radius: 50px;
     background-color: transparent;
 
@@ -915,24 +920,26 @@ export const Main = styled.main`
 
     svg:last-of-type {
       left: 8px;
-      color: var(--firts-bg-color)
+      color: var(--first-bg-color);
     }
 
-    input {
+    input[type="checkbox"] {
       position: absolute;
       appearance: none;
       z-index: 2000;
       width: 28px;
       height: 28px;
       border-radius: 50px;
-      background-color: #149400;
+      background-color: var(--main-color);
     }
 
-    input:checked {
-      left: 44px;
+    input[type="checkbox"]:checked {
+      transform: translateX(44px)
     }
 
-    
+    input[type="checkbox"]:not(:checked) {
+      transform: translateX(0)
+    }
   }
 
   .roll-to-top {
@@ -940,6 +947,6 @@ export const Main = styled.main`
     z-index: 800;
     bottom: 20px;
     right: 20px;
-    color: #149400;
+    color: var(--main-color);
   }
 `;

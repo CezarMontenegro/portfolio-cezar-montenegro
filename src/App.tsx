@@ -149,7 +149,7 @@ function App() {
         <div className="wrapper">
           <div className="about">
             <p>Hello World 👋🏼</p>
-            <p>Eu sou Cezar,</p>
+            <h1>Eu sou Cezar</h1>
             <p className="typing-demo">Desenvolver Web Full Stack.</p>
             <a href="#contato">
               <button>Fale comigo</button>
@@ -163,7 +163,7 @@ function App() {
       <section id="sobre" className="section section-sobre">
         <div className="wrapper">
           <div className="sobre-header">
-            <h2>Sobre mim</h2>
+            <h2><span>Sobre</span> Min</h2>
           </div>
           <div className="content">
             <div className="photo">
@@ -198,7 +198,7 @@ function App() {
       <section id="projetos" className="section section-projetos">
         <div className="wrapper">
           <div className="projetos-header">
-            <h2>Projetos</h2>
+            <h2><span>Meus</span> Projetos</h2>
           </div>
           <div className="cards">
             <div className="project-card">
@@ -301,7 +301,7 @@ function App() {
       <section id="habilidades" className="section section-habilidades">
         <div className="wrapper">
           <div className="habilidades-header">
-            <h2>Habilidades</h2>
+            <h2><span>Minhas</span> Habilidades</h2>
           </div>
           <div className="cards">
             <div className="skill-card">
@@ -329,7 +329,7 @@ function App() {
       <section id="contato" className="section section-contato">
         <div className="wrapper">
           <div className="contato">
-            <h2>Fale comigo!</h2>
+            <h2><span>Fale</span> Comigo!</h2>
             <a
               href="mailto:cezarguimaraes@gmail.com"
               className="contact-ancora"
