@@ -10,56 +10,56 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleScroll = (): void => {
-    const navItems: NodeListOf<Element> = document.querySelectorAll('.nav-item');
-    const sections: NodeListOf<HTMLElement> = document.querySelectorAll('.section');
+    const navItems: NodeListOf<Element> =
+      document.querySelectorAll(".nav-item");
+    const sections: NodeListOf<HTMLElement> =
+      document.querySelectorAll(".section");
 
     sections.forEach((section: HTMLElement) => {
-        const scrollPositionY: number = window.scrollY;
-        const sectionStartPosition: number = section.offsetTop;
-        const sectionHeight: number = section.offsetHeight;
-        const sectionId: string | null = section.getAttribute('id');
+      const scrollPositionY: number = window.scrollY;
+      const sectionStartPosition: number = section.offsetTop;
+      const sectionHeight: number = section.offsetHeight;
+      const sectionId: string | null = section.getAttribute("id");
 
-        if (sectionId === 'section-one') {
-            navItems.forEach((item: Element) => {
-                item.classList.remove('actived');
-            });
-        }
+      if (sectionId === "section-one") {
+        navItems.forEach((item: Element) => {
+          item.classList.remove("actived");
+        });
+      }
 
-        if (
-            scrollPositionY >= sectionStartPosition - 300 &&
-            scrollPositionY < sectionStartPosition + sectionHeight - 300
-        ) {
-            navItems.forEach((item: Element) => {
-                item.classList.remove('actived');
+      if (
+        scrollPositionY >= sectionStartPosition - 300 &&
+        scrollPositionY < sectionStartPosition + sectionHeight - 300
+      ) {
+        navItems.forEach((item: Element) => {
+          item.classList.remove("actived");
 
-                const navLink: HTMLAnchorElement | null = document.querySelector(
-                    `header nav a[href='#${sectionId}']`
-                );
+          const navLink: HTMLAnchorElement | null = document.querySelector(
+            `header nav a[href='#${sectionId}']`
+          );
 
-                if (navLink) {
-                    navLink.classList.add('actived');
-                }
-            });
-        }
+          if (navLink) {
+            navLink.classList.add("actived");
+          }
+        });
+      }
     });
-};
+  };
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
   }, []);
 
   const handleLightDark = (): void => {
     const root = document.documentElement;
 
-    if (root.classList.contains('dark-mode')) {
-      root.classList.remove('dark-mode')
+    if (root.classList.contains("dark-mode")) {
+      root.classList.remove("dark-mode");
     } else {
-      root.classList.add('dark-mode')
+      root.classList.add("dark-mode");
     }
 
-
-    console.log(root)
-  }
-
+    console.log(root);
+  };
 
   return (
     <Main>
@@ -71,16 +71,24 @@ function App() {
           <nav className="nav">
             <ul>
               <li>
-                <a href="#sobre" className="nav-item">Sobre</a>
+                <a href="#sobre" className="nav-item">
+                  Sobre
+                </a>
               </li>
               <li>
-                <a href="#projetos" className="nav-item">Projetos</a>
+                <a href="#projetos" className="nav-item">
+                  Projetos
+                </a>
               </li>
               <li>
-                <a href="#habilidades" className="nav-item">Habilidades</a>
+                <a href="#habilidades" className="nav-item">
+                  Habilidades
+                </a>
               </li>
               <li>
-                <a href="#contato" className="nav-item">Contato</a>
+                <a href="#contato" className="nav-item">
+                  Contato
+                </a>
               </li>
             </ul>
           </nav>
@@ -129,7 +137,11 @@ function App() {
             className="hamburguer-icon"
             onClick={() => setIsMenuOpen((prev) => !prev)}
           >
-            {isMenuOpen ? <i className="fas fa-times"></i> : <i className="fa-solid fa-bars"></i>}
+            {isMenuOpen ? (
+              <i className="fas fa-times"></i>
+            ) : (
+              <i className="fa-solid fa-bars"></i>
+            )}
           </div>
         </div>
       </header>
@@ -541,13 +553,31 @@ function App() {
         </div>
       )}
       <div className="light-dark" onClick={handleLightDark}>
-        
+        <input type="checkbox" name="switch-dark-light" />
       </div>
       <a href="#section-one" className="roll-to-top">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="20" cy="20" r="20" fill="currentcolor"></circle>
-          <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path
+            d="M20 27V13"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M13 20L20 13L27 20"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
         </svg>
       </a>
     </Main>

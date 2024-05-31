@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-  /* ---header---- */ 
-  
+  /* ---header---- */
+
   .header {
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(1rem);
@@ -80,7 +80,7 @@ export const Main = styled.main`
     bottom: 0;
     left: 0;
     transition: 0.3s ease-in-out;
-    width: 100%;    
+    width: 100%;
   }
 
   .nav ul li a::after,
@@ -179,12 +179,13 @@ export const Main = styled.main`
       justify-content: center;
       align-items: center;
       gap: 3rem;
-      animation: menu-opening .3s ease-in;
+      animation: menu-opening 0.3s ease-in;
       scroll-behavior: unset;
     }
 
-    .floating-menu-nav, .floating-menu-social {
-      animation: opacity-increaser .5s ease-in;
+    .floating-menu-nav,
+    .floating-menu-social {
+      animation: opacity-increaser 0.5s ease-in;
     }
 
     @keyframes menu-opening {
@@ -888,7 +889,39 @@ export const Main = styled.main`
     z-index: 800;
     bottom: 20px;
     left: 20px;
-    color: #149400;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+
+    input[type="checkbox"] {
+      width: 70px;
+      height: 40px;
+      appearance: none;
+      border: 1px solid #149400;
+      border-radius: 50px;
+      position: relative;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    input[type="checkbox"]:before {
+      content: "";
+      position: absolute;
+      right: 34px;
+      top: 5px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50px;
+      background-color: #149400;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px;
+
+    }
+
+    input:checked[type="checkbox"]:before {
+      right: 4px;
+    }
   }
 
   .roll-to-top {
