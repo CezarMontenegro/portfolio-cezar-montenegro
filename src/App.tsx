@@ -329,7 +329,7 @@ function App() {
       <section id="contato" className="section section-contato">
         <div className="wrapper">
           <div className="contato">
-            <h2><span>Fale</span> Comigo!</h2>
+            <h2>Fale comigo!</h2>
             <a
               href="mailto:cezarguimaraes@gmail.com"
               className="contact-ancora"
