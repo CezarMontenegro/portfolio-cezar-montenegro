@@ -541,11 +541,7 @@ function App() {
         </div>
       )}
       <div className="light-dark" onClick={handleLightDark}>
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" fill="currentcolor"></circle>
-          <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
+        
       </div>
       <a href="#section-one" className="roll-to-top">
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
