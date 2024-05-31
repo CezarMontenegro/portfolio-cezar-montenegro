@@ -757,7 +757,7 @@ export const Main = styled.main`
   }
 
   .contato .contact-ancora:hover {
-    background-color: rgb(30, 30, 30);
+    background-color: var(--fourth-bg-color);
     border-radius: 10px;
   }
 
