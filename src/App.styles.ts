@@ -168,8 +168,7 @@ export const Main = styled.main`
       background-color: rgba(0, 0, 0, 0.3);
       backdrop-filter: blur(1rem);
       -webkit-backdrop-filter: blur(1rem);
-      height: calc(100vh - 4.5rem);
-      margin-top: 4.51rem;
+      height: 100vh;
       position: fixed;
       top: 0;
       right: 0;
@@ -181,7 +180,23 @@ export const Main = styled.main`
       align-items: center;
       gap: 3rem;
       animation: menu-opening 0.3s ease-in;
-      scroll-behavior: unset;
+      border: 1px solid red;
+    }
+
+    .floating-menu .header {
+      background: none;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      align-self: start;
+      height: 4.5rem;
+      width: 100%;
+      color: rgb(255, 255, 255);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      z-index: 999;
     }
 
     .floating-menu-nav,
@@ -323,7 +338,7 @@ export const Main = styled.main`
     width: 300px;
     background-color: var(--main-color);
     transition: 0.3s;
-    box-shadow: -.5rem .5rem 1rem var(--box-shadow-color);
+    box-shadow: -0.5rem 0.5rem 1rem var(--box-shadow-color);
   }
 
   .section-one .photo img:hover {
@@ -430,7 +445,7 @@ export const Main = styled.main`
 
   .section-sobre .photo img {
     border-radius: 10px;
-    box-shadow: -.5rem .5rem 1rem var(--box-shadow-color);
+    box-shadow: -0.5rem 0.5rem 1rem var(--box-shadow-color);
   }
 
   .section-sobre .about {
@@ -526,7 +541,7 @@ export const Main = styled.main`
     margin-bottom: 16px;
     padding: 2rem;
     border-radius: 5p.5x;
-    box-shadow: -.5rem .5rem 1rem var(--box-shadow-color);
+    box-shadow: -0.5rem 0.5rem 1rem var(--box-shadow-color);
     transition: 0.3s;
   }
 
@@ -544,7 +559,6 @@ export const Main = styled.main`
     font-size: 1.5rem;
     text-align: center;
     color: var(--p-color);
-  
   }
 
   .project-card .img-wrapper {
@@ -681,7 +695,7 @@ export const Main = styled.main`
     align-items: center;
     padding: 20px;
     border-radius: 0.6r.5em;
-    box-shadow: -.5rem .5rem 1rem var(--box-shadow-color);
+    box-shadow: -0.5rem 0.5rem 1rem var(--box-shadow-color);
     transition: 400ms;
   }
 
@@ -936,11 +950,11 @@ export const Main = styled.main`
     }
 
     input[type="checkbox"]:checked {
-      transform: translateX(44px)
+      transform: translateX(44px);
     }
 
     input[type="checkbox"]:not(:checked) {
-      transform: translateX(0)
+      transform: translateX(0);
     }
   }
 
