@@ -650,7 +650,7 @@ function App() {
             name="switch-dark-light"
             onClick={handleLightDark}
           />
-        </div>
+g        </div>
       </div>
       <a href="#section-one" className="roll-to-top">
         <svg
