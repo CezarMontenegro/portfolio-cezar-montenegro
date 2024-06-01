@@ -459,7 +459,7 @@ function App() {
           <header className="header">
             <div className="wrapper">
               <div className="logo">
-                <a href="#section-one">&lt;\Cezar&gt;</a>
+                <a href="#section-one" onClick={() => setIsMenuOpen(false)}>&lt;\Cezar&gt;</a>
               </div>
               <div className="social">
                 <ul>

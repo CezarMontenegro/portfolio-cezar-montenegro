@@ -38,9 +38,9 @@ export const Main = styled.main`
     color: var(--main-color);
   }
 
-  .header .logo a:hover {
+  /* .header .logo a:hover {
     color: #22ff00;
-  }
+  } */
 
   .header .nav {
     font-size: 1rem;
@@ -65,13 +65,13 @@ export const Main = styled.main`
     transition: 0.3s;
   }
 
-  .nav ul li a:hover {
+  /* .nav ul li a:hover {
     color: #22ff00;
   }
 
   .nav .actived {
     color: #22ff00;
-  }
+  } */
 
   .nav .actived::after {
     content: " ";
@@ -118,9 +118,9 @@ export const Main = styled.main`
     color: var(--main-color);
   }
 
-  .header .social svg:hover {
+  /* .header .social svg:hover {
     color: #22ff00;
-  }
+  } */
 
   .header .hamburguer-icon {
     display: none;
@@ -152,9 +152,9 @@ export const Main = styled.main`
       cursor: pointer;
     }
 
-    .header .hamburguer-icon:hover {
+    /* .header .hamburguer-icon:hover {
       color: #22ff00;
-    }
+    } */
   }
 
   /* ---floating-menu---- */
@@ -180,7 +180,6 @@ export const Main = styled.main`
       align-items: center;
       gap: 3rem;
       animation: menu-opening 0.3s ease-in;
-      border: 1px solid red;
     }
 
     .floating-menu .header {
@@ -198,6 +197,15 @@ export const Main = styled.main`
       top: 0;
       z-index: 999;
     }
+
+    .floating-menu .header .logo a {
+      color: rgb(255, 255, 255);
+    }
+
+  
+  .header .logo::after {
+    content: none;
+  }
 
     .floating-menu-nav,
     .floating-menu-social {
