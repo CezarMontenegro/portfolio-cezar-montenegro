@@ -5,8 +5,8 @@ export const Main = styled.main`
 
   .header {
     background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(1rem);
-    -webkit-backdrop-filter: blur(3rem);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     height: 4.5rem;
     width: 100%;
     color: var(--main-color);
@@ -165,9 +165,9 @@ export const Main = styled.main`
 
   @media screen and (max-width: 768px) {
     .floating-menu {
-      background-color: rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(1rem);
-      -webkit-backdrop-filter: blur(1rem);
+      background-color: rgba(0, 0, 0, 0.9);
+      /* backdrop-filter: blur(5px); */
+      /* -webkit-backdrop-filter: blur(5px); */
       height: 100vh;
       position: fixed;
       top: 0;
